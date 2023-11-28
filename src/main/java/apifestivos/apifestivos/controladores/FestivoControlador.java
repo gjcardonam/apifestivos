@@ -2,6 +2,7 @@ package apifestivos.apifestivos.controladores;
 
 import java.util.List;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -12,6 +13,7 @@ import apifestivos.apifestivos.interfaces.IFestivoServicio;
 
 @RestController
 @RequestMapping("/festivos")
+@CrossOrigin
 public class FestivoControlador {
 
     private IFestivoServicio servicio;
